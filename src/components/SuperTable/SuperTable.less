@@ -1,0 +1,71 @@
+@import '../variables.less';
+
+.root {
+  border-spacing: 0;
+  cursor: default;
+
+  :global(.ant-table) {
+    border-radius: 0 !important;
+
+    [role='marker'] {
+      color: darkorange;
+
+      &:hover {
+        color: orange;
+      }
+    }
+  }
+
+  table {
+    white-space: pre;
+    border-radius: 0 !important;
+
+    :global(.ant-checkbox-input) {
+      z-index: -1;
+    }
+
+    > thead tr th {
+      line-height: 16px;
+    }
+  }
+}
+
+.select {
+  background-color: @primary-1;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.left {
+  text-align: left !important;
+}
+
+.right {
+  text-align: right !important;
+}
+
+.unReadRowSelect{
+  background-color: @table-row-hover-bg;
+  color :#000;
+  font-weight: 700;
+}
+
+.unReadRowUnselect{
+  color :#000;
+  font-weight: 700;
+}
+
+.noTransition{
+  tr {
+    transition: all 0s!important;
+    >td{
+      transition: all 0s!important;
+    }
+  }
+}
+
+.noWrap{
+  white-space: nowrap;
+}

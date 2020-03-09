@@ -1,0 +1,48 @@
+@import '../variables.less';
+
+.root {
+  background-color: @tab-background-color;
+
+  :global {
+    .ant-tabs-bar {
+      margin-bottom: 0;
+
+      .ant-tabs-nav-container {
+        height: 30px !important;
+      }
+
+      .ant-tabs-tab {
+        background-color: @tab-background-color !important;
+        border-radius: 0 !important;
+        margin-right: -1px !important;
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 15px !important;
+        padding-right: 20px !important;
+        transition-property: color !important;
+      }
+
+      .ant-tabs-tab-active {
+        background-color: @background-color !important;
+        border-top: 2px solid @primary-color !important;
+      }
+    }
+
+    .anticon-close {
+      opacity: 1 !important;
+      transform: none !important;
+      top: 12px !important;
+
+      &::before {
+        padding-top: 1px;
+        transform: scale(0.9);
+      }
+
+      &:hover {
+        background: #d5d5d8;
+        border-radius: 50% !important;
+      }
+    }
+
+  }
+}

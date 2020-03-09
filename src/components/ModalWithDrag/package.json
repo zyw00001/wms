@@ -1,0 +1,6 @@
+{
+  "name": "ModalWithDrag",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ModalWithDrag.js"
+}

@@ -1,0 +1,50 @@
+@import '../variables.less';
+
+.root {
+  position: relative;
+
+  > form {
+    overflow: hidden;
+
+    > div {
+      margin-bottom: -10px;
+    }
+
+    [role='add'] {
+      cursor: pointer;
+      margin-left: 4px;
+      color: @primary-color;
+    }
+
+    :global(.ant-form-item) {
+      margin-bottom: 10px;
+
+      :global(.ant-form-item-label) {
+        margin-bottom: 5px;
+      }
+
+      :global(.ant-radio-group) {
+        height: 28px;
+      }
+    }
+
+    :global(.ant-form-item-control) input,
+    :global(.ant-calendar-picker) {
+      display: block;
+    }
+
+    :global(.ant-radio-group-small) {
+      display: block;
+      height: @input-height-sm;
+    }
+
+    .checkbox {
+      position: absolute;
+      top: 22px;
+    }
+
+    .formItemWithCheckbox {
+      margin-left: 20px;
+    }
+  }
+}

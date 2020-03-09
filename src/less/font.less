@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'anticon_pld';
+  src: url('/iconfont.eot?t=1564130047044'); /* IE9*/
+  src: url('/iconfont.eot?t=1564130047044#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/iconfont.woff?t=1564130047044') format('woff'), /* chrome, firefox */
+  url('/iconfont.ttf?t=1564130047044') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/iconfont.svg?t=1564130047044#anticon_pld') format('svg'); /* iOS 4.1- */
+}
+
+.anticon_pld {
+  font-family: 'anticon_pld' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont-mixin() {
+  &::before {
+    font-family: 'anticon', 'anticon_pld' !important;
+  }
+}

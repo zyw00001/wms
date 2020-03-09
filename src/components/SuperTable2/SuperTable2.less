@@ -1,0 +1,56 @@
+@import '../variables.less';
+
+.root {
+  border-spacing: 0;
+  cursor: default;
+
+  :global(.ant-table) {
+    border-radius: 0 !important;
+  }
+
+  table {
+    border-radius: 0 !important;
+  }
+
+  :global(.ant-checkbox-input) {
+    z-index: -1;
+  }
+
+  :global(.ant-select-search__field) {
+    z-index: 0;
+  }
+
+  :global(.ant-table-footer) {
+    background-color: @table-header-bg !important;
+  }
+
+  th {
+    line-height: 16px;
+  }
+
+  th [role='add'] {
+    color: @primary-color;
+    margin-left: 4px;
+    cursor: pointer;
+  }
+
+  td {
+    padding: 5px 7.5px !important;
+  }
+}
+
+.select {
+  background-color: @table-row-hover-bg;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.left {
+  text-align: left !important;
+}
+
+.right {
+  text-align: right !important;
+}
